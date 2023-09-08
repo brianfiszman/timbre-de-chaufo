@@ -1,8 +1,8 @@
-import chaufoPic from "./chaufo.png";
-import "./App.css";
-import TitleWrapper from "./Components/Title.js";
-import Picture from "./Components/Picture.js";
-import LinkWrapper from "./Components/Link.js";
+import TitleWrapper from "../../Components/Title.js";
+import Picture from "../../Components/Picture.js";
+import LinkWrapper from "../../Components/Link.js";
+import chaufoPic from "../../Resources/img/chaufo.png";
+import "./Home.css";
 
 function App() {
   return (
