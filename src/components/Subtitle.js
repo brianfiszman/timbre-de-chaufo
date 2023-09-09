@@ -1,9 +1,10 @@
 import { styled } from "styled-components";
-import { SUBTITLE_COLOR } from "../style/colors.style";
 
 // Create a SubTitle component that'll render an <h1> tag with some styles
 const Subtitle = styled.h3`
-  color: ${({ color }) => (color ? color : SUBTITLE_COLOR)};
+  font-size: ${(props) => props.theme.fontSizes.large};
+  color: ${(props) => props.theme.colors.secondary};
+  text-align: center;
 `;
 
 const SubtitleWrapper = ({ children, ...props }) => (

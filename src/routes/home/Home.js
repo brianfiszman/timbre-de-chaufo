@@ -9,16 +9,18 @@ import {
   MainBody,
   MainHeader,
   Subtitle,
+  DangerHeader,
 } from "../../components";
+import { theme } from "../../style/theme.style";
 import chaufoPic from "../../resources/img/chaufo.png";
 import "./Home.css";
 
 function Home() {
-  const timeForChaufo = new Date(2023, 8, 15);
+  const timeForChaufo = startOfDay(new Date(2023, 8, 15));
 
   return (
     <Fragment>
-      <MainHeader secondary>
+      <MainHeader theme={theme}>
         <Picture
           src={chaufoPic}
           alt="chaufo"
@@ -27,19 +29,17 @@ function Home() {
         />
       </MainHeader>
 
-      <MainBody primary>
-        <Title primary>Timbre de Chaufo</Title>
+      <MainBody theme={theme}>
+        <Title theme={theme}>Timbre de Chaufo</Title>
 
         <Countdown
           date={timeForChaufo}
-          renderer={({ hours, minutes, seconds, days }) => {
-            return (
-              <Subtitle>
-                Faltan {zeroPad(days, 2)} días y {zeroPad(hours, 2)}:
-                {zeroPad(minutes, 2)}:{zeroPad(seconds, 2)}
-              </Subtitle>
-            );
-          }}
+          renderer={({ hours, minutes, seconds, days }) => (
+            <DangerHeader theme={theme}>
+              Faltan {zeroPad(days, 2)} días y {zeroPad(hours, 2)}:
+              {zeroPad(minutes, 2)}:{zeroPad(seconds, 2)}
+            </DangerHeader>
+          )}
         />
 
         <Link href="https://www.instagram.com/chaufoman/">

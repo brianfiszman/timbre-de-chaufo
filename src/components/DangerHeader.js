@@ -1,15 +1,15 @@
 import { styled } from "styled-components";
 
 // Create a Title component that'll render an <h1> tag with some styles
-const Title = styled.h1`
+const DangerHeader = styled.h2`
   font-size: ${(props) => props.theme.fontSizes.xlarge};
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.danger};
   text-align: center;
   margin-bottom: ${(props) => props.theme.spacing.medium};
 `;
 
-const TitleWrapper = ({ children, ...props }) => (
-  <Title {...props}>{children}</Title>
+const DangerHeaderWrapper = ({ children, ...props }) => (
+  <DangerHeader {...props}>{children}</DangerHeader>
 );
 
-export { TitleWrapper as Title };
+export { DangerHeaderWrapper as DangerHeader };
