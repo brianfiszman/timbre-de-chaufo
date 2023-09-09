@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 import {
+  LazyImageWithTitle,
   MainBody,
   MainHeader,
   Picture,
   RouterLink,
-  Subtitle,
   Title,
 } from "../../components";
 import { theme } from "../../style/theme.style";
@@ -35,32 +35,77 @@ function TopTen() {
           Top 7 de cosas con las que Chaufo nos ha divertido
         </Title>
 
-        <Subtitle theme={theme}>
+        <LazyImageWithTitle
+          src={forgiveMeNati}
+          theme={theme}
+          size="small"
+          alt="apologizing-nati"
+        >
           Perdoname Nati por todos mis errores 😭
-        </Subtitle>
-        <Picture src={forgiveMeNati} size="small" />
+        </LazyImageWithTitle>
 
-        <Subtitle theme={theme}>El anticristo está entre nosotros</Subtitle>
-        <Picture src={brianTheAntiChrist} size="small" />
+        <LazyImageWithTitle
+          src={forgiveMeNati}
+          theme={theme}
+          size="small"
+          alt="apologizing-nati"
+        >
+          Perdoname Nati por todos mis errores 😭
+        </LazyImageWithTitle>
 
-        <Subtitle theme={theme}>El solo quiere HDP, no quiere ponerla</Subtitle>
-        <Picture src={heDoesntWantPussy} size="small" />
+        <LazyImageWithTitle
+          src={brianTheAntiChrist}
+          theme={theme}
+          size="small"
+          alt="brian-the-antichrist"
+        >
+          El anticristo está entre nosotros
+        </LazyImageWithTitle>
 
-        <Subtitle theme={theme}>
+        <LazyImageWithTitle
+          src={heDoesntWantPussy}
+          theme={theme}
+          size="small"
+          alt="no-hoes-just-lil-kid-games"
+        >
+          El solo quiere HDP, no quiere ponerla
+        </LazyImageWithTitle>
+
+        <LazyImageWithTitle
+          src={chaufoTheCreepy}
+          theme={theme}
+          size="small"
+          alt="chaufo-is-no-creepy"
+        >
           Ha demostrado ser un experto para hablar con una mujer
-        </Subtitle>
-        <Picture src={chaufoTheCreepy} size="small" />
+        </LazyImageWithTitle>
 
-        <Subtitle theme={theme}>
+        <LazyImageWithTitle
+          src={hisKidsPic}
+          theme={theme}
+          size="large"
+          alt="chaufo-and-his-kids"
+        >
           ¿!Alguien quiere pensar en sus niños!?
-        </Subtitle>
-        <Picture src={hisKidsPic} size="large" />
+        </LazyImageWithTitle>
 
-        <Subtitle theme={theme}>Lo mas Chaufo que Chaufo haya dicho:</Subtitle>
-        <Picture src={taxiCabPic} size="large" />
+        <LazyImageWithTitle
+          src={taxiCabPic}
+          theme={theme}
+          size="large"
+          alt="chaufo-never-pays"
+        >
+          Lo mas Chaufo que Chaufo haya dicho:
+        </LazyImageWithTitle>
 
-        <Subtitle theme={theme}>¿Y como olvidarme del niño Hitler?</Subtitle>
-        <Picture src={heilBrian} size="small" />
+        <LazyImageWithTitle
+          src={heilBrian}
+          theme={theme}
+          size="small"
+          alt="heil-brian"
+        >
+          ¿Y como olvidarme del niño Hitler?
+        </LazyImageWithTitle>
 
         <RouterLink to={"/"} theme={theme}>
           Home

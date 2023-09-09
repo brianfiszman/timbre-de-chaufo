@@ -7,6 +7,7 @@ import { RouterLink } from "./RouterLink";
 import { Subtitle } from "./Subtitle";
 import { Title } from "./Title";
 import { Text } from "./Text";
+import { LazyImageWithTitle } from "./LazyImageWithTitle";
 
 export {
   Title,
@@ -18,4 +19,5 @@ export {
   MainHeader,
   Countdown,
   Text,
+  LazyImageWithTitle,
 };
