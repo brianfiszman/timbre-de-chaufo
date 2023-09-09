@@ -22,17 +22,24 @@ const CountdownNumber = styled.div`
 const CountdownWrapper = ({ children, countdownTo, ...props }) => (
   <Countdown
     date={countdownTo}
-    renderer={({ hours, minutes, seconds, days }) => (
-      <CountdownContainer {...props}>
-        <Text {...props}>
-          Faltan
-          <CountdownNumber {...props}>{zeroPad(days, 2)}</CountdownNumber> días
-          y <CountdownNumber {...props}>{zeroPad(hours, 2)}</CountdownNumber>:
-          <CountdownNumber {...props}>{zeroPad(minutes, 2)}</CountdownNumber>:
-          <CountdownNumber {...props}>{zeroPad(seconds, 2)}</CountdownNumber>
-        </Text>
-      </CountdownContainer>
-    )}
+    renderer={({ hours, minutes, seconds, days, completed }) =>
+      completed ? (
+        { ...children }
+      ) : (
+        <CountdownContainer {...props}>
+          <Text {...props}>
+            Faltan
+            <CountdownNumber {...props}>
+              {zeroPad(days, 2)}
+            </CountdownNumber>{" "}
+            días y{" "}
+            <CountdownNumber {...props}>{zeroPad(hours, 2)}</CountdownNumber>:
+            <CountdownNumber {...props}>{zeroPad(minutes, 2)}</CountdownNumber>:
+            <CountdownNumber {...props}>{zeroPad(seconds, 2)}</CountdownNumber>
+          </Text>
+        </CountdownContainer>
+      )
+    }
   />
 );
 

@@ -28,17 +28,25 @@ function Home() {
       </MainHeader>
 
       <MainBody theme={theme}>
-        <Title theme={theme}>Timbre de Chaufo</Title>
+        {Date.now() < timeForChaufo ? (
+          <Title theme={theme}>En honor a Chaufo</Title>
+        ) : (
+          ""
+        )}
 
-        <Countdown countdownTo={timeForChaufo} theme={theme} />
+        <Countdown countdownTo={timeForChaufo} theme={theme}>
+          <MainBody theme={theme}>
+            <Title theme={theme}>Timbre de Chaufo</Title>
 
-        <Link theme={theme} href="https://www.instagram.com/chaufoman/">
-          Learn about Chaufo
-        </Link>
+            <Link theme={theme} href="https://www.instagram.com/chaufoman/">
+              Learn about Chaufo
+            </Link>
 
-        <RouterLink to={"top10"} theme={theme}>
-          Top 7 de cosas con las que Chaufo nos ha divertido :-D
-        </RouterLink>
+            <RouterLink to={"top10"} theme={theme}>
+              Top 7 de cosas con las que Chaufo nos ha divertido :-D
+            </RouterLink>
+          </MainBody>
+        </Countdown>
       </MainBody>
     </Fragment>
   );
