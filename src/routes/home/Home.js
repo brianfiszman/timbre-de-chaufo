@@ -37,7 +37,7 @@ function Home() {
         </Link>
 
         <RouterLink to={"top10"} theme={theme}>
-          Top 10 de cosas con las que Chaufo nos ha divertido :-D
+          Top 7 de cosas con las que Chaufo nos ha divertido :-D
         </RouterLink>
       </MainBody>
     </Fragment>
