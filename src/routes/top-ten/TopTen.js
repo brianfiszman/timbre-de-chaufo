@@ -12,6 +12,7 @@ import { theme } from "../../style/theme.style";
 import chaufoPic from "../../resources/img/chaufo.png";
 import hisKidsPic from "../../resources/img/kids.png";
 import taxiCabPic from "../../resources/img/taxi-cab-special.png";
+import heilBrian from "../../resources/img/hitler-in-da-grup.jpeg";
 
 function TopTen() {
   return (
@@ -35,8 +36,11 @@ function TopTen() {
         </Subtitle>
         <Picture src={hisKidsPic} />
 
-        <Subtitle theme={theme}>Lo mas Chaufo que Chaufo haya dicho: </Subtitle>
+        <Subtitle theme={theme}>Lo mas Chaufo que Chaufo haya dicho:</Subtitle>
         <Picture src={taxiCabPic} />
+
+        <Subtitle theme={theme}>¿Y como olvidarme del niño Hitler?</Subtitle>
+        <Picture src={heilBrian} />
 
         <RouterLink to={"/"} theme={theme}>
           Home
