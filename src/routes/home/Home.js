@@ -8,7 +8,6 @@ import {
   Title,
   MainBody,
   MainHeader,
-  Subtitle,
   DangerHeader,
 } from "../../components";
 import { theme } from "../../style/theme.style";
