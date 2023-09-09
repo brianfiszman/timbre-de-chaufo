@@ -34,13 +34,13 @@ function TopTen() {
         <Subtitle theme={theme}>
           ¿!Alguien quiere pensar en los niños!?
         </Subtitle>
-        <Picture src={hisKidsPic} />
+        <Picture src={hisKidsPic} size="large" />
 
         <Subtitle theme={theme}>Lo mas Chaufo que Chaufo haya dicho:</Subtitle>
-        <Picture src={taxiCabPic} />
+        <Picture src={taxiCabPic} size="large" />
 
         <Subtitle theme={theme}>¿Y como olvidarme del niño Hitler?</Subtitle>
-        <Picture src={heilBrian} />
+        <Picture src={heilBrian} size="small" />
 
         <RouterLink to={"/"} theme={theme}>
           Home

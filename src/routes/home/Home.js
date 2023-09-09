@@ -2,14 +2,13 @@ import { Fragment } from "react";
 import {
   RouterLink,
   Link,
+  Countdown,
   Picture,
   Title,
   MainBody,
   MainHeader,
-  DangerHeader,
 } from "../../components";
 import { theme } from "../../style/theme.style";
-import Countdown, { zeroPad } from "react-countdown";
 import { startOfDay } from "date-fns";
 import chaufoPic from "../../resources/img/chaufo.png";
 import "./Home.css";
@@ -31,15 +30,7 @@ function Home() {
       <MainBody theme={theme}>
         <Title theme={theme}>Timbre de Chaufo</Title>
 
-        <Countdown
-          date={timeForChaufo}
-          renderer={({ hours, minutes, seconds, days }) => (
-            <DangerHeader theme={theme}>
-              Faltan {zeroPad(days, 2)} días y {zeroPad(hours, 2)}:
-              {zeroPad(minutes, 2)}:{zeroPad(seconds, 2)}
-            </DangerHeader>
-          )}
-        />
+        <Countdown countdownTo={timeForChaufo} theme={theme} />
 
         <Link theme={theme} href="https://www.instagram.com/chaufoman/">
           Learn about Chaufo

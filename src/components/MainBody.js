@@ -7,6 +7,7 @@ export const MainBody = styled.div`
   font-size: ${(props) => props.theme.fontSizes.medium};
   border-radius: ${(props) => props.theme.borderRadius.medium};
   box-shadow: ${(props) => props.theme.boxShadow};
+  font-family: ${(props) => props.theme.gothicFont};
 
   display: flex;
   flex-direction: column;
