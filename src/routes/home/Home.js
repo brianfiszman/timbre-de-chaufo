@@ -14,7 +14,7 @@ import chaufoPic from "../../resources/img/chaufo.png";
 import "./Home.css";
 
 function Home() {
-  const timeForChaufo = startOfDay(new Date(2023, 8, 15));
+  const timeForChaufo = startOfDay(new Date(2023, 8, 17));
 
   return (
     <Fragment>
@@ -28,17 +28,25 @@ function Home() {
       </MainHeader>
 
       <MainBody theme={theme}>
-        <Title theme={theme}>Timbre de Chaufo</Title>
+        {Date.now() < timeForChaufo ? (
+          <Title theme={theme}>En honor a Chaufo</Title>
+        ) : (
+          ""
+        )}
 
-        <Countdown countdownTo={timeForChaufo} theme={theme} />
+        <Countdown countdownTo={timeForChaufo} theme={theme}>
+          <MainBody theme={theme}>
+            <Title theme={theme}>Timbre de Chaufo</Title>
 
-        <Link theme={theme} href="https://www.instagram.com/chaufoman/">
-          Learn about Chaufo
-        </Link>
+            <Link theme={theme} href="https://www.instagram.com/chaufoman/">
+              Learn about Chaufo
+            </Link>
 
-        <RouterLink to={"top10"} theme={theme}>
-          Top 7 de cosas con las que Chaufo nos ha divertido :-D
-        </RouterLink>
+            <RouterLink to={"top10"} theme={theme}>
+              Top 7 de cosas con las que Chaufo nos ha divertido :-D
+            </RouterLink>
+          </MainBody>
+        </Countdown>
       </MainBody>
     </Fragment>
   );
