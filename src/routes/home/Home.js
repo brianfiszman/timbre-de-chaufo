@@ -1,6 +1,4 @@
-import { startOfDay } from "date-fns";
 import { Fragment } from "react";
-import Countdown, { zeroPad } from "react-countdown";
 import {
   RouterLink,
   Link,
@@ -11,6 +9,8 @@ import {
   DangerHeader,
 } from "../../components";
 import { theme } from "../../style/theme.style";
+import Countdown, { zeroPad } from "react-countdown";
+import { startOfDay } from "date-fns";
 import chaufoPic from "../../resources/img/chaufo.png";
 import "./Home.css";
 
@@ -41,11 +41,11 @@ function Home() {
           )}
         />
 
-        <Link href="https://www.instagram.com/chaufoman/">
+        <Link theme={theme} href="https://www.instagram.com/chaufoman/">
           Learn about Chaufo
         </Link>
 
-        <RouterLink to={"top10"}>
+        <RouterLink to={"top10"} theme={theme}>
           Top 10 de cosas con las que Chaufo nos ha divertido :-D
         </RouterLink>
       </MainBody>

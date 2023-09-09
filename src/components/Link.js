@@ -1,9 +1,14 @@
 import { styled } from "styled-components";
-import { LINK_COLOR } from "../style/colors.style";
 
 // Create a Title component that'll render an <h1> tag with some styles
 const Link = styled.a`
-  color: ${({ color }) => (color ? color : LINK_COLOR)};
+  font-size: ${(props) => props.theme.fontSizes.large};
+  color: ${(props) => props.theme.colors.secondary};
+  text-shadow: 2px 2px 4px ${(props) => props.theme.colors.danger};
+
+  &:hover {
+    color: ${(props) => props.theme.colors.accent};
+  }
 `;
 
 const LinkWrapper = ({ children, href, ...props }) => (
@@ -12,4 +17,4 @@ const LinkWrapper = ({ children, href, ...props }) => (
   </Link>
 );
 
-export default LinkWrapper;
+export { LinkWrapper as Link };

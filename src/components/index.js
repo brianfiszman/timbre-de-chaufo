@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "./Link";
 import { DangerHeader } from "./DangerHeader";
 import { MainBody } from "./MainBody";
 import { MainHeader } from "./MainHeader";

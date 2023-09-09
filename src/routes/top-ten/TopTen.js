@@ -38,7 +38,9 @@ function TopTen() {
         <Subtitle theme={theme}>Lo mas Chaufo que Chaufo haya dicho: </Subtitle>
         <Picture src={taxiCabPic} />
 
-        <RouterLink to={"/"}>Home</RouterLink>
+        <RouterLink to={"/"} theme={theme}>
+          Home
+        </RouterLink>
       </MainBody>
     </Fragment>
   );
