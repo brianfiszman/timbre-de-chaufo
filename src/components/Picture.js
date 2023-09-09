@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const Picture = styled.img`
+export const Picture = styled.img`
   src: ${({ src }) => src};
   alt: ${({ alt }) => alt};
   max-width: ${({ size }) =>
@@ -13,5 +13,3 @@ const Picture = styled.img`
       : "100%"};
   border-radius: ${({ borderRadius }) => borderRadius};
 `;
-
-export default Picture;
