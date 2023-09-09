@@ -45,15 +45,6 @@ function TopTen() {
         </LazyImageWithTitle>
 
         <LazyImageWithTitle
-          src={forgiveMeNati}
-          theme={theme}
-          size="small"
-          alt="apologizing-nati"
-        >
-          Perdoname Nati por todos mis errores 😭
-        </LazyImageWithTitle>
-
-        <LazyImageWithTitle
           src={brianTheAntiChrist}
           theme={theme}
           size="small"
