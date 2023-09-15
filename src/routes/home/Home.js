@@ -14,7 +14,7 @@ import chaufoPic from "../../resources/img/chaufo.png";
 import "./Home.css";
 
 function Home() {
-  const timeForChaufo = startOfDay(new Date(2023, 8, 17));
+  const timeForChaufo = startOfDay(new Date(2023, 8, 23));
 
   return (
     <Fragment>
