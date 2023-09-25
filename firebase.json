@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "chaufo",
+    "site": "chaufest",
     "public": "build",
     "ignore": [
       "firebase.json",
