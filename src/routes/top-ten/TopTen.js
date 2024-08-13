@@ -38,7 +38,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={forgiveMeNati}
           theme={theme}
-          size="small"
+          size="medium"
           alt="apologizing-nati"
         >
           Perdoname Nati por todos mis errores 😭
@@ -47,7 +47,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={brianTheAntiChrist}
           theme={theme}
-          size="small"
+          size="medium"
           alt="brian-the-antichrist"
         >
           El anticristo está entre nosotros
@@ -56,7 +56,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={heDoesntWantPussy}
           theme={theme}
-          size="small"
+          size="medium"
           alt="no-hoes-just-lil-kid-games"
         >
           El solo quiere HDP, no quiere ponerla
@@ -65,7 +65,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={chaufoTheCreepy}
           theme={theme}
-          size="small"
+          size="medium"
           alt="chaufo-is-no-creepy"
         >
           Ha demostrado ser un experto para hablar con una mujer
@@ -74,7 +74,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={hisKidsPic}
           theme={theme}
-          size="large"
+          size="medium"
           alt="chaufo-and-his-kids"
         >
           ¿!Alguien quiere pensar en sus niños!?
@@ -83,7 +83,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={taxiCabPic}
           theme={theme}
-          size="large"
+          size="medium"
           alt="chaufo-never-pays"
         >
           Lo mas Chaufo que Chaufo haya dicho:
@@ -92,7 +92,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={heilBrian}
           theme={theme}
-          size="small"
+          size="medium"
           alt="heil-brian"
         >
           ¿Y como olvidarme del niño Hitler?
