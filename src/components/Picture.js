@@ -11,5 +11,7 @@ export const Picture = styled.img`
       : size === "large"
       ? "75%"
       : "100%"};
+  display: flex;
+  margin: 0 auto;
   border-radius: ${({ borderRadius }) => borderRadius};
 `;
