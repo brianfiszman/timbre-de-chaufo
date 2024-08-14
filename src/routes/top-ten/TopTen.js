@@ -31,6 +31,10 @@ function TopTen() {
       </MainHeader>
 
       <MainBody theme={theme}>
+        <RouterLink to={"/"} theme={theme}>
+          Home
+        </RouterLink>
+
         <Title theme={theme}>
           Top 7 de cosas con las que Chaufo nos ha divertido
         </Title>
@@ -38,7 +42,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={forgiveMeNati}
           theme={theme}
-          size="medium"
+          size="large"
           alt="apologizing-nati"
         >
           Perdoname Nati por todos mis errores 😭
@@ -47,7 +51,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={brianTheAntiChrist}
           theme={theme}
-          size="medium"
+          size="large"
           alt="brian-the-antichrist"
         >
           El anticristo está entre nosotros
@@ -56,7 +60,7 @@ function TopTen() {
         <LazyImageWithTitle
           src={heDoesntWantPussy}
           theme={theme}
-          size="medium"
+          size="large"
           alt="no-hoes-just-lil-kid-games"
         >
           El solo quiere HDP, no quiere ponerla
@@ -74,7 +78,6 @@ function TopTen() {
         <LazyImageWithTitle
           src={hisKidsPic}
           theme={theme}
-          size="medium"
           alt="chaufo-and-his-kids"
         >
           ¿!Alguien quiere pensar en sus niños!?
@@ -83,7 +86,6 @@ function TopTen() {
         <LazyImageWithTitle
           src={taxiCabPic}
           theme={theme}
-          size="medium"
           alt="chaufo-never-pays"
         >
           Lo mas Chaufo que Chaufo haya dicho:
