@@ -5,6 +5,7 @@ import TopTen from "./routes/top-ten";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import Chaufest from "./routes/chaufest";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/top10",
     element: <TopTen />
+  },
+  {
+    path: "/chaufest",
+    element: <Chaufest />
   },
 ]);
 

@@ -14,7 +14,7 @@ import chaufoPic from "../../resources/img/chaufo.png";
 import "./Home.css";
 
 function Home() {
-  const timeForChaufo = startOfDay(new Date(2023, 8, 17));
+  const timeForChaufo = startOfDay(new Date(2023, 8, 30));
 
   return (
     <Fragment>
@@ -44,6 +44,10 @@ function Home() {
 
             <RouterLink to={"top10"} theme={theme}>
               Top 7 de cosas con las que Chaufo nos ha divertido :-D
+            </RouterLink>
+
+            <RouterLink to={"chaufest"} theme={theme}>
+              Conocé todo sobre la Chaufest!
             </RouterLink>
           </MainBody>
         </Countdown>
