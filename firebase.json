@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "site": "chaufest",
-    "public": "build",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
