@@ -31,9 +31,17 @@ function TopTen() {
       </MainHeader>
 
       <MainBody theme={theme}>
-        <RouterLink to={"/"} theme={theme}>
-          Home
-        </RouterLink>
+        <div className="navbar">
+          <RouterLink to={"/"} theme={theme}>
+            Home
+          </RouterLink>
+          <RouterLink to={"top10"} theme={theme}>
+            Top 10
+          </RouterLink>
+          <RouterLink to={"chaufest"} theme={theme}>
+            ¡Chaufest!
+          </RouterLink>
+        </div>
 
         <Title theme={theme}>
           Top 7 de cosas con las que Chaufo nos ha divertido
