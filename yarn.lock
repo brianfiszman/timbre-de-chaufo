@@ -7968,7 +7968,7 @@ react-lifecycles-compat@^3.0.4:
 
 react-medium-image-zoom@^5.2.8:
   version "5.2.8"
-  resolved "https://registry.npmjs.org/react-medium-image-zoom/-/react-medium-image-zoom-5.2.8.tgz"
+  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.2.8.tgz#20c56d7592f83ea5b67a2c650b4fda040b75cf53"
   integrity sha512-ivnubZi/2GQcMTneQy5gjLxEQLenKu081844qqZ7/JvLxSh5YPF1TLq7s+5rc54dKa0jjPT8Zm2tiC0Sda6eIA==
 
 react-modal-image@^2.6.0:
