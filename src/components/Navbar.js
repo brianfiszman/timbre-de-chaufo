@@ -1,28 +1,21 @@
-import Nav from 'react-bootstrap/Nav';
 import { RouterLink } from './RouterLink';
 import { theme } from '../style/theme.style';
+import "../style/styles.css";
 
 function Navbar(){
-    <Nav className="justify-content-center" activeKey="/home">
-    <Nav.Item>
-        <RouterLink to={"/"} theme={theme}>
+    <div className="navbar">
+        <RouterLink to={"/"} theme={theme} className="navbar__link">
             Home
         </RouterLink>
-    </Nav.Item>
 
-    <Nav.Item>
-        <RouterLink to={"top10"} theme={theme}>
+        <RouterLink to={"/top10"} theme={theme} className="navbar__link">
             Top 10
         </RouterLink>
-    </Nav.Item>
 
-    <Nav.Item>
-        <RouterLink to={"chaufest"} theme={theme}>
+        <RouterLink to={"/chaufest"} theme={theme} className="navbar__link">
             ¡Chaufest!
         </RouterLink>
-    </Nav.Item>
-
-    </Nav>
+    </div>
 }
 
 export default Navbar;

@@ -8,6 +8,7 @@ import {
   Title,
 } from "../../components";
 import { theme } from "../../style/theme.style";
+import "../../style/styles.css";
 
 import chaufoPic from "../../resources/img/chaufo.webp";
 import hisKidsPic from "../../resources/img/kids.webp";
@@ -32,13 +33,13 @@ function TopTen() {
 
       <MainBody theme={theme}>
         <div className="navbar">
-          <RouterLink to={"/"} theme={theme}>
+          <RouterLink to={"/"} theme={theme} className="navbar__link">
             Home
           </RouterLink>
-          <RouterLink to={"top10"} theme={theme}>
+          <RouterLink to={"/top10"} theme={theme} className="navbar__link">
             Top 10
           </RouterLink>
-          <RouterLink to={"chaufest"} theme={theme}>
+          <RouterLink to={"/chaufest"} theme={theme} className="navbar__link">
             ¡Chaufest!
           </RouterLink>
         </div>
