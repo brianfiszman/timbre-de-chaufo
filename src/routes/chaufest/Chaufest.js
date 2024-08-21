@@ -1,10 +1,12 @@
-import { RouterLink, MainHeader, Picture } from "../../components";
+import { RouterLink, MainHeader, Picture, MainBody } from "../../components";
 import { theme } from "../../style/theme.style";
 import chaufest from "../../resources/img/chaufest.webp";
 import "../../style/styles.css";
+import Zoom from "react-medium-image-zoom";
 
 function Chaufest() {
   return (
+  <>
     <MainHeader theme={theme}>
       <div className="navbar">
           <RouterLink to={"/"} theme={theme} className="navbar__link">
@@ -16,10 +18,15 @@ function Chaufest() {
           <RouterLink to={"/chaufest"} theme={theme} className="navbar__link">
             ¡Chaufest!
           </RouterLink>
-        </div>
-
-      <Picture src={chaufest} alt="chaufest" size="small"/>
+	  </div>
     </MainHeader>
+	
+	<MainBody theme={theme}>
+		<Zoom>
+			<Picture src={chaufest} alt="chaufest" size="medium" className="chaufest" />
+		</Zoom>
+	</MainBody>
+	</>
   );
 }
 
