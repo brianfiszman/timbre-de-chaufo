@@ -10,7 +10,7 @@ import {
 } from "../../components";
 import { theme } from "../../style/theme.style";
 import { startOfDay } from "date-fns";
-import chaufoPic from "../../resources/img/chaufo.png";
+import chaufoPic from "../../resources/img/chaufo.webp";
 import "./Home.css";
 
 function Home() {

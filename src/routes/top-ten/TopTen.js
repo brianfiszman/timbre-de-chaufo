@@ -9,14 +9,14 @@ import {
 } from "../../components";
 import { theme } from "../../style/theme.style";
 
-import chaufoPic from "../../resources/img/chaufo.png";
-import hisKidsPic from "../../resources/img/kids.png";
-import taxiCabPic from "../../resources/img/taxi-cab-special.png";
-import heilBrian from "../../resources/img/hitler-in-da-grup.jpeg";
-import brianTheAntiChrist from "../../resources/img/brian-the-anti-christ.jpeg";
-import chaufoTheCreepy from "../../resources/img/creepy-with-girls.jpeg";
-import forgiveMeNati from "../../resources/img/forgive-me-nati.jpeg";
-import heDoesntWantPussy from "../../resources/img/chaufo-does-not-want-pussy.jpeg";
+import chaufoPic from "../../resources/img/chaufo.webp";
+import hisKidsPic from "../../resources/img/kids.webp";
+import taxiCabPic from "../../resources/img/taxi-cab-special.webp";
+import heilBrian from "../../resources/img/hitler-in-da-grup.webp";
+import brianTheAntiChrist from "../../resources/img/brian-the-anti-christ.webp";
+import chaufoTheCreepy from "../../resources/img/creepy-with-girls.webp";
+import forgiveMeNati from "../../resources/img/forgive-me-nati.webp";
+import heDoesntWantPussy from "../../resources/img/chaufo-does-not-want-pussy.webp";
 
 function TopTen() {
   return (
