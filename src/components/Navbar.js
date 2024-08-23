@@ -1,21 +1,40 @@
 import { RouterLink } from './RouterLink';
 import { theme } from '../style/theme.style';
-import "../style/styles.css";
+import { styled } from "styled-components";
 
-function Navbar(){
-    <div className="navbar">
-        <RouterLink to={"/"} theme={theme} className="navbar__link">
+const Navbar = styled.div`
+  margin: 0 auto;
+  display: flex;
+  @media (max-width: 480px){
+      display: grid;
+      text-align: center;
+    }
+`;
+
+const NavbarLink = styled.div`
+  margin: 0 30px;
+`;
+
+function Nav(){
+    <Navbar>
+        <NavbarLink>
+          <RouterLink to={"/"} theme={theme} className="navbar__link">
             Home
-        </RouterLink>
+          </RouterLink>
+        </NavbarLink>
 
-        <RouterLink to={"/top10"} theme={theme} className="navbar__link">
+        <NavbarLink>
+          <RouterLink to={"/top10"} theme={theme} className="navbar__link">
             Top 10
-        </RouterLink>
+          </RouterLink>
+        </NavbarLink>
 
-        <RouterLink to={"/chaufest"} theme={theme} className="navbar__link">
+        <NavbarLink>
+          <RouterLink to={"/chaufest"} theme={theme} className="navbar__link">
             ¡Chaufest!
-        </RouterLink>
-    </div>
+          </RouterLink>
+        </NavbarLink>
+	</Navbar>
 }
 
-export default Navbar;
+export default Nav;
