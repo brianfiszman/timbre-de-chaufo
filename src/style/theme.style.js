@@ -37,6 +37,11 @@ const borderRadius = {
 // Sombra
 const boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
 
+// Navbar
+const navbarLink = {
+  margin: "0 2%"
+}
+
 export const theme = {
   colors,
   fontSizes,
@@ -44,4 +49,5 @@ export const theme = {
   borderRadius,
   boxShadow,
   gothicFont,
+  navbarLink
 };

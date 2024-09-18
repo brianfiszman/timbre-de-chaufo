@@ -8,6 +8,7 @@ import {
   Title,
 } from "../../components";
 import { theme } from "../../style/theme.style";
+import { styled } from "styled-components";
 
 import chaufoPic from "../../resources/img/chaufo.webp";
 import hisKidsPic from "../../resources/img/kids.webp";
@@ -17,6 +18,19 @@ import brianTheAntiChrist from "../../resources/img/brian-the-anti-christ.webp";
 import chaufoTheCreepy from "../../resources/img/creepy-with-girls.webp";
 import forgiveMeNati from "../../resources/img/forgive-me-nati.webp";
 import heDoesntWantPussy from "../../resources/img/chaufo-does-not-want-pussy.webp";
+
+const Navbar = styled.div`
+  margin: 0 auto;
+  display: flex;
+  @media (max-width: 480px){
+      display: grid;
+      text-align: center;
+    }
+`;
+
+const NavbarLink = styled.div`
+  margin: 0 30px;
+`;
 
 function TopTen() {
   return (
@@ -31,9 +45,26 @@ function TopTen() {
       </MainHeader>
 
       <MainBody theme={theme}>
-        <RouterLink to={"/"} theme={theme}>
-          Home
-        </RouterLink>
+
+        <Navbar>
+          <NavbarLink>
+            <RouterLink to={"/"} theme={theme} className="navbar__link">
+              Home
+            </RouterLink>
+          </NavbarLink>
+
+          <NavbarLink>
+            <RouterLink to={"/top10"} theme={theme} className="navbar__link">
+              Top 10
+            </RouterLink>
+          </NavbarLink>
+
+          <NavbarLink>
+            <RouterLink to={"/chaufest"} theme={theme} className="navbar__link">
+              ¡Chaufest!
+            </RouterLink>
+          </NavbarLink>
+        </Navbar>
 
         <Title theme={theme}>
           Top 7 de cosas con las que Chaufo nos ha divertido

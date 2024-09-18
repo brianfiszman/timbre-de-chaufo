@@ -1,9 +1,6 @@
-import { RouterLink, MainHeader, Picture, MainBody } from "../../components";
-import { theme } from "../../style/theme.style";
-import chaufest from "../../resources/img/chaufest.webp";
+import { RouterLink } from './RouterLink';
+import { theme } from '../style/theme.style';
 import { styled } from "styled-components";
-import "../../style/styles.css";
-import Zoom from "react-medium-image-zoom";
 
 const Navbar = styled.div`
   margin: 0 auto;
@@ -18,11 +15,8 @@ const NavbarLink = styled.div`
   margin: 0 30px;
 `;
 
-function Chaufest() {
-  return (
-  <>
-    <MainHeader theme={theme}>
-      <Navbar>
+function Nav(){
+    <Navbar>
         <NavbarLink>
           <RouterLink to={"/"} theme={theme} className="navbar__link">
             Home
@@ -40,16 +34,7 @@ function Chaufest() {
             ¡Chaufest!
           </RouterLink>
         </NavbarLink>
-	    </Navbar>
-    </MainHeader>
-	
-	<MainBody theme={theme}>
-		<Zoom>
-			<Picture src={chaufest} alt="chaufest" size="medium" className="chaufest" />
-		</Zoom>
-	</MainBody>
-	</>
-  );
+	</Navbar>
 }
 
-export default Chaufest;
+export default Nav;
